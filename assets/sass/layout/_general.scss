@@ -6,15 +6,13 @@
   width: 100%;
 }
 
-
 // contents.
 body {
   @media (max-width: 575.98px) {
-
     &:before,
     &:after {
       z-index: -1;
-      content: '';
+      content: "";
       position: absolute;
 
       top: 0;
@@ -38,11 +36,11 @@ body {
 
 main::before {
   @media (max-width: 575.98px) {
-    content: '';
+    content: "";
     position: absolute;
 
     top: 0;
-    left: calc(50% - .5px);
+    left: calc(50% - 0.5px);
 
     width: 1px;
     height: 100%;
@@ -56,7 +54,7 @@ main::before {
 
 section.blank {
   .row {
-    >div {
+    > div {
       height: 200px;
 
       @media (min-width: 576px) and (max-width: 991.98px) {
@@ -67,9 +65,9 @@ section.blank {
 }
 
 .set-lines {
-  >div {
+  > div {
     &:after {
-      content: '';
+      content: "";
       position: absolute;
 
       right: 0;
@@ -89,7 +87,7 @@ section.blank {
     }
 
     &:first-child:before {
-      content: '';
+      content: "";
       position: absolute;
 
       left: 0;
@@ -129,8 +127,7 @@ section.blank {
 
   @include transform(translateX(-50%));
 
-  >div {
-
+  > div {
     &:before,
     &:after {
       height: 100%;
@@ -138,19 +135,35 @@ section.blank {
   }
 }
 
-
 // support scrollable.
 .scrollable {
   overflow: auto;
   -webkit-overflow-scrolling: touch;
 
-  >ul {
+  > ul {
     position: relative;
   }
 }
 
+// tab links for better scroll
+.scroll-link-custom {
+  display: block;
+  position: relative;
+  top: -40px;
+  visibility: hidden;
 
+  &.first-link-el {
+    top: -75px;
+  }
 
+  @media screen and (max-width: 1024px) {
+    top: 60px;
+
+    &.first-link-el {
+      top: 40px;
+    }
+  }
+}
 
 // search box.
 .overlay-search {
@@ -189,7 +202,7 @@ section.blank {
           line-height: 1.5;
         }
         @media (min-width: 576px) and (max-width: 767.98px) {
-          font-size: .9em;
+          font-size: 0.9em;
         }
         @media (min-width: 768px) and (max-width: 991.98px) {
           font-size: 1em;
@@ -204,7 +217,6 @@ section.blank {
   }
 }
 
-
 // for testing.
 .test {
   position: absolute;
@@ -213,7 +225,7 @@ section.blank {
   left: 50%;
 
   color: #fff;
-  font-family: 'Poppins';
+  font-family: "Poppins";
   font-size: 11px;
   font-weight: 800;
   text-transform: uppercase;
@@ -222,8 +234,116 @@ section.blank {
   @include transform(translate(-50%, -50%));
 
   @media (max-width: 575.98px) {
-    color: rgba(#fff, .5);
+    color: rgba(#fff, 0.5);
     font-size: 9px;
     font-weight: 400;
   }
+}
+
+.comparisson-table {
+  border: 0;
+  border-collapse: separate;
+  border-spacing: 10px 0;
+  margin: 0 0 30px!important;
+  table-layout: fixed;
+
+  td, th {
+    padding: 20px;
+    background: #fff;
+    border: 1px solid #efefef;
+    border-top: 0!important;
+    text-align: center;
+  }
+
+  td.row-label {
+    text-align: left;
+  }
+
+  th.row-label  {
+    background: $c-blue-light;
+    font-size: 18px;
+    font-weight: 500;
+    
+    &--green {
+      color: $c-white;
+      background-color: $c-green;
+    }
+
+    &--blue-light {
+      color: $c-white;
+      background-color: $cs--blue-light;
+    }
+    
+  }     
+}
+
+.floating-tab {
+  position: fixed;
+  right: 0;
+  top: 40%;
+  background-color: $c-blue;
+  z-index: 100;
+  
+  a {
+    color: $c-white;
+    padding: 15px;
+    display: block;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    text-transform: uppercase;
+    position: relative;
+    padding-top: 50px;
+    text-decoration: none;
+
+    &::before {
+      content: ">";
+      position: absolute;
+      top: 15px;
+      left: 12px;
+      width: 25px;
+      height: 25px;
+      background-color: $c-white;
+      color: $c-blue;
+      border-radius: 100%; 
+      text-align: center;
+      line-height: 26px;
+      font-size: 19px;
+    }
+  }
+
+  @media (max-width: 575.98px) {
+    top: 20%;
+  }
+}
+
+blockquote p {
+	position: relative;
+}
+
+blockquote {
+	p {
+		&::before {
+			content: "";
+			position: absolute;
+			top: -80px;
+			left: 50%;
+			transform: translateX(-50%);
+			width: 80px;
+			height: 60px;
+			background-image: url(../img/icons/icon-quote-mark.svg);
+			background-size: auto 100%;
+			background-repeat: no-repeat;
+			background-position: 50%;
+		}
+	}
+	
+	&.left {
+		p {
+			&::before {
+				top: -80px;
+				left: 8%;
+				transform: translateX(-75%);
+			}
+		}	
+	}	
 }

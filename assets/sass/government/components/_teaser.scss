@@ -1,0 +1,62 @@
+.teaser {
+  position: relative;
+  margin-top: 0;
+
+  @media screen and (min-width: $screen-md) {
+    margin-top: 80px;
+  }
+  .container {
+    padding: 0;
+    @media screen and (min-width: $screen-lg) {
+      padding: 0 15px;
+    }
+  }
+  &__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+  &__img {
+    flex: 0 0 100%;
+    @media screen and (min-width: $screen-sm) {
+      flex: 0 0 58.33333%;
+    }
+    img {
+      width: 100%;
+      object-fit: cover;
+      height: 100%;
+    }
+  }
+
+  &__text-content {
+    padding: 25px 15px 30px 15px;
+    @include flexbox;
+    flex-direction: column;
+    justify-content: center;
+    flex:0 0 100%;
+    @media screen and (min-width: $screen-sm) {
+      padding: 30px;
+      flex:0 0 41.66667%;
+    }
+    @media screen and (min-width: $screen-md) {
+      padding: 40px 60px 47px 60px;
+    }
+
+    h3,
+    p {
+      color: $c-white;
+    }
+    p {
+      &:last-of-type {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  &__link-wrapper {
+    margin-top: 14px;
+    margin-bottom: 0;
+    @media screen and (min-width: $screen-md) {
+      margin-top: 34px;
+    }
+  }
+}

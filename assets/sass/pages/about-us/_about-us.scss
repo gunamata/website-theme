@@ -1,0 +1,175 @@
+.hero-about {
+  .texts-container {
+    padding-top: 141px;
+    padding-bottom: 215px;
+    @media screen and (max-width: 1199.98px) {
+      padding-bottom: 150px;
+      padding-top: 200px;
+    }
+    @media screen and (max-width: 767px) {
+      padding-bottom: 0;
+      padding-top: 160px;
+    }
+    .texts-wrap {
+      .title-label {
+        font-size: 40px;
+        font-weight: 500;
+        margin-bottom: 11px;
+        @media screen and (max-width: 1199.98px) {
+          font-size: 2.4em;
+        }
+        @media screen and (max-width: 767px) {
+          font-size: 1.75em;
+        }
+      }
+      .description-label {
+        font-size: 20px;
+        @media screen and (max-width: 1199.98px) {
+          font-size: 18px;
+        }
+        @media screen and (max-width: 767px) {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+  .about-img {
+    position: absolute;
+    right: 0;
+    max-width: 870px;
+    top: 0;
+    @media screen and (max-width: 1199.98px) {
+      max-width: 700px;
+    }
+    @media screen and (max-width: 1024px) {
+      max-width: 600px;
+    }
+    @media screen and (max-width: 992px) {
+      max-width: 450px;
+    }
+    @media screen and (max-width: 767px) {
+      position: static;
+    }
+  }
+}
+
+.about-suse {
+  padding: 5.25em 0 5em;
+  @media screen and (max-width: 991px) {
+    padding: 4em 0 2em;
+  }
+  .contents-container {
+    @media (min-width: 992px) {
+      .col-lg-6 {
+        padding-right: 13px;
+      }
+    }
+  }
+  .button {
+    box-shadow: none;
+    &:hover {
+      background-color: rgba($c-blue, 0.1);
+      color: $c-blue;
+      border-color: rgba($c-blue, 0.1);
+    }
+    padding: 1.21em 2.2em; 
+
+    @media (max-width: 575.98px) {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  .image-container {
+    @media screen and (max-width: 991px) {
+      text-align: center;
+      margin-top: 36px;
+    }
+  }
+  h2 {
+    font-weight: 500;
+    margin-bottom: 10px;
+    @media screen and (min-width: 992px) {
+      margin-top: -10px;
+    }
+  }
+  p {
+    color: $c-black;
+    font-weight: 400;
+    @media screen and (min-width: 1200px) {
+      font-size: 20px;
+    }
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  img {
+    max-width: 100%;
+  }
+
+  &.about-screen3 {
+    background: $c-gray-base-light;
+    .grid-container .max-sized {
+      @media screen and (min-width: 992px) {
+        flex-direction: row-reverse;
+      }
+    }
+  }
+  &.about-screen4 {
+    p:last-of-type {
+      margin-bottom: 65px;
+    }
+  }
+}
+.work-with-us {
+  background: $c-blue;
+  color: $c-white;
+  padding: 4.22em 0 5.24em;
+  margin-bottom: 5.25em;
+  @media screen and (max-width: 991px) {
+    padding: 3em 0;
+    margin-bottom: 3em;
+  }
+  h2 {
+    font-weight: 500;
+    margin-bottom: 10px;
+  }
+  p {
+    color: $c-white;
+    font-weight: 400;
+    max-width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    @media screen and (min-width: 1200px) {
+      font-size: 20px;
+    }
+    @media screen and (max-width: 991px) {
+      max-width: 80%;
+    }
+    @media screen and (max-width: 767px) {
+      max-width: 100%;
+    }
+  }
+  .button.c-white {
+    background: $c-blue-light2;
+    color: $c-blue;
+    max-width: 317px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    line-height: 12px;
+    margin-right: auto;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    margin-top: 89px;
+    @media screen and (max-width: 1199.98px) {
+      margin-top: 30px;
+    }
+    @media screen and (max-width: 991px) {
+      max-width: 250px;
+      margin-top: 20px;
+    }
+  }
+}

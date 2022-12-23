@@ -1,0 +1,24 @@
+.alert  {
+  @include flexbox;
+  align-items: center;
+  
+  @media screen and (min-width: $screen-lg){
+    flex-wrap: wrap;
+  }
+  p {
+    margin-bottom: 0;
+  }
+  img {
+    max-width: 100px;
+    margin-right: 1rem;
+    @media screen and (min-width: $screen-lg){
+      max-width: 140px;
+      margin-right: 3rem;
+    }
+  }
+  &.alert-primary {
+    color: $c-blue-dark-secondary;
+    background-color: $light-blue;
+    border-color: $light-blue-secondary;
+}
+}

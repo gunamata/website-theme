@@ -76,6 +76,13 @@ html {
     padding-left: 15px;
     padding-right: 15px;
     margin: 0 auto;
+    @media screen and (max-width: 1400px) {
+      max-width: 1270px;
+    }
+    @media screen and (max-width: 1024px){
+      padding-left: 0;
+      padding-right: 0;
+    }
   }
 
   .no-gutters {
@@ -454,6 +461,18 @@ html {
   .grid-container .hidden-sm-down {
     display: none !important;
   }
+  .products-rke-screeen2-custom .grid-container .col-3 {
+    flex: 0 0 100%;
+    max-width: 100%;
+    text-align: center;
+}
+.products-rke-screeen2-custom .grid-container .col-3 .rke-logo {
+  max-width: 200px;
+}
+.products-rke-screeen2-custom .grid-container  .col-9 {
+  flex: 0 0 100%;
+    max-width: 100%;
+}
 }
 
 @media (min-width: 768px) {

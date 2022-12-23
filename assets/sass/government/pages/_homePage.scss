@@ -1,0 +1,73 @@
+.hero-banner {
+  .text-container {
+    height: 100%;
+  }
+  &__text {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    @media screen and (min-width: $screen-lg) {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+    @media screen and (min-width: 1501px) {
+      padding-left: 100px;
+      padding-right: 180px;
+    }
+    h1 {
+      padding-bottom: 5px;
+      margin-top: 20px;
+      @media screen and (min-width: $screen-xxl) {
+        padding-bottom: 45px;
+        margin-top: 0;
+      }
+    }
+    p {
+      font-size: $font-18;
+      @media screen and (min-width: $screen-xxl) {
+        margin-bottom: 25px;
+      }
+    }
+  }
+  &__right {
+    height: 100%;
+    img {
+      width: 100%;
+      object-fit: cover;
+      height: 100%;
+    }
+  }
+}
+
+.homepage {
+  .generic-info__box {
+    p {
+      font-size: $font-18;
+      @media screen and (min-width: $screen-md) {
+        font-size: $font-20;
+      }
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+    .box__text-content {
+      height: 100%;
+    }
+  }
+
+  .teaser {
+    &__text-content {
+      h3 {
+        padding-bottom: 20px;
+        @media screen and (min-width: $screen-md) {
+          padding-bottom: 30px;
+          padding-right: 30px;
+        }
+      }
+    }
+  }
+  .generic-info__row  {
+    justify-content: space-around;
+  }
+}

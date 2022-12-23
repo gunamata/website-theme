@@ -1,0 +1,141 @@
+.footer {
+  padding-top: 2rem;
+  background-color: $c-blue-dark;
+  color: $c-white;
+  padding-left: 15px;
+  padding-right: 15px;
+  @media screen and (min-width: $screen-lg) {
+    padding-left: 45px;
+    padding-right: 45px;
+  }
+  &__top {
+    .col-3 {
+      width: 100%;
+      text-align: center;
+      @media screen and (min-width: $screen-lg) {
+        width: 16.66666667%;
+        text-align: left;
+      }
+    }
+    .col-6 {
+      width: 100%;
+      @media screen and (min-width: $screen-lg) {
+        width: auto;
+      }
+    }
+  }
+  .row {
+    justify-content: space-between;
+  }
+  &__logo img {
+    max-height: 80px;
+    margin-bottom: 20px;
+  }
+  &__social-media {
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    @media screen and (min-width: $screen-lg) {
+      text-align: right;
+      margin-right: -5px;
+    }
+    a {
+      margin: 0 5px;
+      display: inline;
+      &:hover {
+        text-decoration: none;
+      }
+    }
+    i {
+      color: $c-white;
+      font-size: 25px;
+    }
+    span {
+      font-size: 0;
+      display: none;
+      @media screen and (min-width: $screen-lg) {
+        display: inline;
+      }
+    }
+  }
+  &__links {
+    ul {
+      @include flexbox;
+      justify-content: center;
+      flex-wrap: wrap;
+      padding-left: 0;
+      @media screen and (min-width: $screen-lg) {
+        justify-content: left;
+      }
+      li {
+        margin: 5px 25px;
+        flex: 0 0 100%;
+        text-align: center;
+        @media screen and (min-width: $screen-lg) {
+          margin: 30px 25px;
+        }
+        @media screen and (min-width: $screen-md) {
+          flex: 0 0 auto;
+          text-align: left;
+        }
+        a {
+          color: $c-white;
+          &:hover {
+            text-decoration: underline;
+            color: $c-white;
+          }
+        }
+      }
+    }
+  }
+}
+
+.copyright {
+  padding-bottom: 20px;
+  margin-top: 20px;
+  @media screen and (min-width: $screen-lg) {
+    margin-top: 0;
+  }
+  .col {
+    flex: 1 0 100%;
+    @media screen and (min-width: $screen-lg) {
+      flex: 1 0 0%;
+    }
+  }
+  .col-5 {
+    width: 100%;
+    @media screen and (min-width: $screen-lg) {
+      width: auto;
+    }
+  }
+  .support-number {
+    text-align: center;
+    @media screen and (min-width: $screen-lg) {
+      text-align: left;
+    }
+  }
+  a {
+    color: $c-white;
+    text-decoration: underline;
+    &:hover {
+      color: $c-white;
+    }
+  }
+  &__links {
+    display: block;
+    text-align: center;
+    @media screen and (min-width: $screen-lg) {
+      @include flexbox;
+      justify-content: space-between;
+      text-align: right;
+    }
+    p {
+      &:nth-child(2) {
+        margin-left: 0;
+        @media screen and (min-width: $screen-lg) {
+          margin-left: 50px;
+        }
+      }
+    }
+  }
+}

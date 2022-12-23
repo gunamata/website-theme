@@ -1,0 +1,15 @@
+.security {
+  &.cta-banner {
+
+    .cta-banner__content {
+      @media screen and (min-width: $screen-md) {
+        padding-top: 54px;
+      }
+    }
+    h3 {
+      @media screen and (min-width: $screen-lg) {
+        font-size: $font-28;
+      }
+    }
+  }
+}

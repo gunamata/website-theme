@@ -1,0 +1,58 @@
+// -----------------------------------------------------------------------------
+// This file contains all application-wide Sass variables.
+// -----------------------------------------------------------------------------
+
+/* Colors */
+$c-black: #000000;
+$c-blue-default: #2453ff;
+$c-blue-light2: #0036fd;
+$c-blue-light3: #0034f0;
+$c-blue-dark: #192072;
+$c-blue-dark-secondary: #132b85;
+$c-purple: #5f224a;
+$c-white: #ffffff;
+$c-green-dark: #30ba78;
+$c-green-dark2: #289c64;
+$c-green-dark3: #26915e;
+$c-green-light: #90ebcd;
+$c-gray-light: #efefef;
+$c-gray-light2: #ececec;
+$c-gray-light3: #f7f7f7;
+$c-gray-light4: #dee2e6;
+$c-yellow: #ffc61c;
+$c-offwhite: #f8f9fa;
+$transparent: transparent;
+$light-blue : #d3ddff;
+$light-blue-secondary : #c2cfff;
+$primary-color: #212529;
+
+/* Fonts Family */
+$primary-font: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+  Helvetica Neue, Arial, Noto Sans, sans-serif;
+
+/* Font Weight */
+$regular: 400;
+$medium: 500;
+$semi-bold: 600;
+$bold: 700;
+
+/* Font Sizes */
+$font-50: 50px;
+$font-45: 45px;
+$font-40: 40px;
+$font-38: 38px;
+$font-32: 32px;
+$font-28: 28px;
+$font-25: 25px;
+$font-24: 24px;
+$font-22: 22px;
+$font-20: 20px;
+$font-18: 18px;
+$font-16: 16px;
+
+/* Screen Sizes for media queries */
+$screen-xxl: 1600px;
+$screen-xl: 1440px;
+$screen-lg: 1201px;
+$screen-md: 992px;
+$screen-sm: 767px;

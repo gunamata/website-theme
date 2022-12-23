@@ -1,0 +1,50 @@
+.about-suse-rgs {
+  padding-top:52px;
+  padding-bottom: 30px;
+  @media screen and (min-width: $screen-md) {
+    padding-top: 72px;
+    padding-bottom: 60px;
+  }
+  .heading-wrapper {
+    height: 100%;
+    @include flexbox;
+    align-items: center;
+  }
+  .images-wrapper {
+    @include flexbox;
+    align-items: center;
+    justify-content: center;
+    .about-img {
+      @include flexbox;
+      margin: 0 10px 20px;
+      align-items: center;
+      justify-content: center;
+      .fa-2x {
+        font-size: 18px;
+        @media screen and (min-width:$screen-md) {
+          font-size: 2em;
+        }
+      }
+      &:nth-child(1) {
+        img {
+          margin-right: 30px;
+        }
+      }
+      &:nth-child(3) {
+        img {
+          margin-left: 10px;
+          
+          @media screen and (min-width:$screen-md) {
+            height: 65px;
+          }
+        }
+      }
+      &:nth-child(5) {
+        img {
+          margin-left: 30px;
+          height: 75px;
+        }
+      }
+    }
+  }
+}

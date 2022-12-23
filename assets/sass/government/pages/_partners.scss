@@ -1,0 +1,128 @@
+.partnership {
+  .container {
+    @media screen and (min-width: $screen-lg) {
+      padding: 0 45px;
+    }
+  }
+
+  padding: 60px 0 0 0;
+  margin-bottom: -1rem;
+
+  @media screen and (min-width: $screen-md) {
+    padding: 80px 0 0 0;
+    margin-bottom: 0;
+  }
+
+  &__title {
+    margin-bottom: 30px;
+
+    @media screen and (min-width: $screen-lg) {
+      margin-bottom: 70px;
+    }
+  }
+
+  &__type {
+    position: sticky;
+    top: 50px;
+    @include border-all(1px, solid, $c-gray-light);
+
+    h2 {
+      background-color: $c-gray-light3;
+      padding: 15px;
+      font-weight: 700;
+      font-size: $font-22;
+      margin-bottom: 0;
+
+      @media screen and (min-width: $screen-md) {
+        font-size: $font-25;
+      }
+    }
+  }
+
+  .partner-category {
+    position: relative;
+
+    ul {
+      list-style: none;
+      padding-top: 30px;
+      padding-left: 0;
+      margin-bottom: 0;
+
+      @media screen and (min-width: $screen-md) {
+        padding-top: 10px;
+      }
+
+      li {
+        padding: 5px 15px;
+
+        @media screen and (min-width: $screen-md) {
+          padding: 10px 15px;
+        }
+
+        &:hover {
+          background: $c-gray-light3;
+
+          a {
+            color: $primary-color;
+          }
+
+        }
+
+        a {
+          font-size: $font-18;
+          font-weight: 500;
+          text-decoration: none;
+
+          @media screen and (min-width: $screen-md) {
+            font-size: $font-20;
+          }
+        }
+      }
+    }
+  }
+}
+
+.partnership__wrapper-section {
+  padding-top: 40px;
+
+  @media screen and (min-width: $screen-md) {
+    padding-top: 80px;
+  }
+
+  @media screen and (min-width: $screen-sm) {
+    &:first-child {
+      padding-top: 10px;
+    }
+  }
+
+  .col-6 {
+    margin-bottom: 1rem;
+  }
+
+  .box {
+    height: 120px;
+    align-items: center;
+    justify-content: center;
+    @include border-all(1px, solid, $c-gray-light);
+    @include flexbox;
+
+    @media screen and (min-width: $screen-md) {
+      height: 160px;
+    }
+
+    .image-container {
+      @include flexbox;
+      padding: 30px;
+      height: 100%;
+
+      img {
+        max-height: 100%;
+        object-fit: contain;
+      }
+    }
+  }
+}
+
+.partners.generic-banner {
+    position: relative;
+  }

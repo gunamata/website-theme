@@ -1,0 +1,76 @@
+html .mktoForm {
+	width: 100%!important;
+  padding: 0 !important
+}
+
+html .mktoForm .mktoFormRow {
+	@include flexbox;
+  margin: 0 -15px;
+}
+.mktoButtonRow {
+  margin: 0 -15px !important;
+}
+html .mktoForm .mktoFormRow .mktoFormCol {
+	float: none;
+	flex: 1 0 50%;
+	padding: 0 15px;
+}
+
+html .mktoForm .mktoFormRow .mktoFormCol label {
+	color: $c-white;
+  margin-bottom: 5px;
+}
+
+html .mktoForm .mktoFormRow .mktoFormCol input,
+html .mktoForm .mktoFormRow .mktoFormCol select,
+html .mktoForm .mktoFormRow .mktoFormCol textarea {
+	width: 100%!important;
+	box-shadow: none!important;
+	line-height: 2.2em!important;
+	background-color: transparent!important;
+	color: $c-white!important;
+  @include border-all(1px, solid, $c-white);
+  font-size: $font-16;
+  height: 34px;
+	border-radius: 0 !important;
+	padding-top: 0 !important;
+}
+
+html .mktoForm .mktoFormRow .mktoFormCol select option {
+	background-color: #ddd;
+	color: $c-black
+}
+
+html .mktoForm .mktoFieldWrap {
+	float: none
+}
+
+html .mktoForm .mktoButtonWrap.mktoSimple {
+	margin-left: 15px!important
+}
+
+html .mktoForm .mktoButtonWrap.mktoSimple .mktoButton {
+	background-color: $c-blue-default !important;
+	background-image: none;
+	border: none !important;
+	padding: 10px 50px;
+	&:hover {
+		border: none !important;
+	}
+}
+
+html .mktoLogicalField.mktoCheckboxList.mktoHasWidth {
+	width: 100%!important
+}
+
+html .mktoForm input[type=checkbox]+label:before,
+html .mktoForm input[type=radio]+label:before {
+	box-shadow: none
+}
+
+.mktoForm textarea[rows="4"] {
+	height: 5.8em !important;
+}
+.mktoForm .mktoOffset {
+	width: 0 !important;
+}

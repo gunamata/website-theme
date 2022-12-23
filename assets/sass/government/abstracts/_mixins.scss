@@ -1,0 +1,68 @@
+/*for border Radius*/
+@mixin border-radius($size) {
+  -webkit-border-radius: $size;
+  -moz-border-radius: $size;
+  -o-border-radius: $size;
+  border-radius: $size;
+  -ms-border-radius: $size;
+}
+
+@mixin border-all($width, $style, $color) {
+  border-width: $width;
+  border-style: $style;
+  border-color: $color;
+}
+
+@mixin flexbox {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
+@mixin border($direction, $width, $style, $color) {
+  border-#{$direction}: $width $style $color;
+}
+
+@mixin margin-lr-auto() {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@mixin rotate($rotation) {
+  -webkit-transform: rotate($rotation);
+  -moz-transform: rotate($rotation);
+  -ms-transform: rotate($rotation);
+  -o-transform: rotate($rotation);
+  transform: rotate($rotation);
+}
+
+@mixin rotateScale($rotation, $scale) {
+  -webkit-transform: rotate($rotation) scale($scale);
+  -moz-transform: rotate($rotation) scale($scale);
+  -ms-transform: rotate($rotation) scale($scale);
+  -o-transform: rotate($rotation) scale($scale);
+  transform: rotate($rotation) scale($scale);
+}
+
+@mixin placeholder-color($color_value) {
+  &::-webkit-input-placeholder {
+    color: $color_value;
+  }
+  &::-moz-placeholder {
+    color: $color_value;
+  }
+  &:-ms-input-placeholder {
+    color: $color_value;
+  }
+  &:-moz-placeholder {
+    color: $color_value;
+  }
+}
+
+@mixin transition($transition) {
+  -moz-transition: $transition;
+  -o-transition: $transition;
+  -webkit-transition: $transition;
+  transition: $transition;
+}

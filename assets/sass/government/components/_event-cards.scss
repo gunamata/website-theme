@@ -1,0 +1,49 @@
+.event-cards {
+  position: relative;
+  padding: 50px 0 60px;
+  @media screen and (min-width: $screen-sm) {
+    padding: 50px 0 30px;
+  }
+  @media screen and (min-width: $screen-md) {
+    padding: 70px 0 50px;
+  }
+  h2 {
+    padding-bottom: 25px;
+    @media screen and (min-width: $screen-md) {
+      padding-bottom: 40px;
+    }
+  }
+
+  &__row {
+    & > div {
+      margin-bottom: 25px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+      @media screen and (min-width: $screen-sm) {
+        margin-bottom: 30px;
+        &:last-child{
+          margin-bottom: 30px;
+        }
+      }
+    }
+  }
+
+  &__card {
+    height: 100%;
+    position: relative;
+    padding: 40px 20px 30px;
+    @media screen and (min-width: $screen-md) {
+      padding: 40px;
+    }
+    .card__text-content {
+      p {
+        padding: 20px 0;
+        margin-bottom: 0;
+        @media screen and (min-width: $screen-md) {
+          padding: 30px 0;
+        }
+      }
+    }
+  }
+}

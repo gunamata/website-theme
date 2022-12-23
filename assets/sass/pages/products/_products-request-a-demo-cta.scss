@@ -1,0 +1,118 @@
+.products-request-a-demo-cta-screen2 {
+  margin-top: 120px;
+
+  .contents-container {
+    padding-bottom: 60px;
+  }
+
+  .texts-container {
+    color: $c-blue-dark1;
+    text-align: center;
+  }
+
+  .text-label {
+    line-height: 1.125;
+  }
+
+  .logos-container {
+    padding-top: 70px;
+    padding-right: 0;
+    padding-bottom: 60px;
+    padding-left: 0;
+
+    @media screen and (max-width: 991px) {
+      .row {
+        margin: 0 15px;
+      }
+    }
+    @media screen and (max-width: 500px) {
+      .row {
+        margin: 0;
+      }
+    }
+  }
+
+  .logo-container {
+    margin: 40px 0;
+    padding: 0;
+  }
+
+  .logo-item {
+    line-height: 0;
+    text-align: center;
+
+    img {
+      position: relative;
+      display: inline-block;
+
+      width: 100%;
+      max-width: 180px;
+      height: auto;
+    }
+  }
+
+  @media (max-width: 575.98px) {
+    margin-top: 30px;
+
+    .contents-container {
+      padding-bottom: 60px;
+    }
+
+    .texts-container {
+      padding-top: 0;
+      padding-right: $mobile-side-space;
+      padding-bottom: 0;
+
+      text-align: left;
+
+      .title-label {
+        line-height: 1.6;
+      }
+    }
+
+    .logos-container {
+      margin-right: 15px;
+      margin-left: 15px;
+      padding-top: 4px; 
+      padding-bottom: 0;
+    }
+    .logo-container {
+      margin-top: 20px;
+      margin-bottom: 20px;
+      padding-right: 10px;
+      padding-left: 10px;
+    }
+  }
+  @media (min-width: 576px) and (max-width: 767.98px) {
+    margin-top: 50px;
+
+    .contents-container {
+      padding-bottom: 90px;
+    }
+
+    .logos-container {
+      margin-top: 40px;
+      padding-top: 0;
+    }
+  }
+  @media (min-width: 768px) and (max-width: 991.98px) {
+    .contents-container {
+      padding-bottom: 120px;
+    }
+
+    .logos-container {
+      margin-top: 50px;
+      padding-top: 0;
+    }
+  }
+  @media (min-width: 992px) and (max-width: 1199.98px) {
+    .contents-container {
+      padding-bottom: 150px;
+    }
+
+    .logos-container {
+      margin-top: 60px;
+      padding-top: 0;
+    }
+  }
+}

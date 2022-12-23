@@ -1,0 +1,116 @@
+.profile-cards {
+  position: relative;
+  margin: 50px 0 50px 0;
+  @media screen and (min-width: $screen-md) {
+    margin: 70px 0 70px 0;
+  }
+
+  &__row {
+    & > div {
+      margin-bottom: 25px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      @media screen and (min-width: $screen-md) {
+        margin-bottom: 40px;
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+
+  &__card-wrapper {
+    @media screen and (min-width: $screen-sm) {
+      height: 100%;
+      display: flex;
+    }
+  }
+
+  &__card {
+    display: flex;
+    align-items: center;
+    padding: 30px 15px;
+    height: 100%;
+
+    @media screen and (min-width: $screen-md) {
+      justify-content: center;
+      padding: 60px 30px;
+    }
+  }
+
+  .card {
+    &__text-content {
+      @media screen and (min-width: $screen-md) {
+        max-width: 80%;
+      }
+    }
+    &__user-info {
+      flex: 1 0 25%;
+    }
+
+    &__user-avatar {
+      position: relative;
+      max-width: 260px;
+      max-height: 260px;
+
+      img {
+        border-radius: 50%;
+        object-fit: cover;
+        object-position: center;
+      }
+    }
+
+    &__user-social {
+      margin: 15px 0;
+      li {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        a {
+          i {
+            font-size: 24px;
+            @media screen and (min-width : $screen-lg){
+              font-size: 22px;
+            }
+          }
+        }
+      }
+
+      a {
+        span {
+          font-size: 0px;
+        }
+        &:hover {
+          text-decoration: none;
+        }
+      }
+    }
+
+    &__content-wrapper {
+      flex: 1 0 75%;
+
+      @media screen and (min-width: $screen-md) {
+        padding-left: 20px;
+      }
+    }
+
+    &__head-content {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 20px;
+    }
+
+    &__head {
+      font-size: $font-28;
+      font-weight: $regular;
+    }
+
+    &__sub-head {
+      font-size: $font-28;
+      font-weight: $medium;
+      line-height: 34px;
+    }
+  }
+}

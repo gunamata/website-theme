@@ -1,0 +1,74 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1.2;
+
+  a {
+    color: inherit !important;
+  }
+}
+
+h1 {
+  font-size: $font-32;
+  font-weight: $medium;
+  @media screen and (min-width: 1501px) {
+    font-size: $font-45;
+  }
+}
+
+h2 {
+  font-weight: $medium;
+  font-size: $font-28;
+  @media screen and (min-width: $screen-md) {
+    font-size: $font-38;
+  }
+}
+h3 {
+  font-weight: $medium;
+  font-size: $font-22;
+  @media screen and (min-width: $screen-md) {
+    font-size: $font-25;
+  }
+  @media screen and (min-width: $screen-lg) {
+    font-size: $font-32;
+  }
+  a {
+    &:hover {
+      text-decoration: none !important;
+    }
+  }
+}
+.heading-h3 {
+  font-size: $font-24;
+  @media screen and (min-width: $screen-md) {
+    font-size: $font-32;
+  }
+  @media screen and (min-width: $screen-lg) {
+    font-size: $font-38;
+  }
+}
+.font-16 {
+  font-size: $font-16 !important;
+}
+.font-xl {
+  font-size: $font-38 !important;
+  @media screen and (min-width: $screen-lg) {
+    font-size: $font-50 !important;
+  }
+}
+p,
+li {
+  font-size: 1rem;
+  font-weight: $regular;
+  line-height: 1.5;
+}
+
+p {
+  a {
+    display: inline;
+    word-break: break-all;
+  }
+}
