@@ -1,8 +1,8 @@
 // 1. Configuration and helpers
-@import "abstracts/functions", "abstracts/mixins";
-
 @import "abstracts/variable/variable";
 @import "abstracts/variable/color";
+
+@import "abstracts/functions", "abstracts/mixins";
 
 // 2. Vendors
 @import "vendor/normalize", "vendor/loryslider", "vendor/flexboxgrid";
